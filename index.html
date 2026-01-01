@@ -1,4 +1,14 @@
 ---
 layout: home
 author_profile: true
+header:
+  overlay_image: /assets/images/BANNERS/Coral_Ocean_Crossing.png
+  overlay_filter: 0.5
+excerpt: " "
 ---
+
+<h3 class="archive__subtitle">Recent Posts</h3>
+
+{% for post in site.posts %}
+  {% include archive-single.html %}
+{% endfor %}

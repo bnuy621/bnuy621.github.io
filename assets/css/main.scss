@@ -5,5 +5,28 @@ search: false
 
 @charset "utf-8";
 
+/* Material 3 Color Overrides */
+$background-color: #121212;
+$text-color: #E0E0E0;
+$primary-color: #FF8A80;
+$border-color: #757575;
+$code-background-color: #424242;
+$form-background-color: #424242;
+$footer-background-color: #121212;
+$link-color: #FF8A80;
+$link-color-hover: #FFDAD4;
+$link-color-visited: #9FA8DA;
+$masthead-link-color: #E0E0E0;
+$masthead-link-color-hover: #FF8A80;
+$muted-text-color: #BDBDBD;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__hero--overlay .page__title {
+  display: none;
+}
+
+.page__hero--overlay {
+  min-height: 400px;
+}
