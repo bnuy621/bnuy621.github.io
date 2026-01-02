@@ -1,11 +1,4 @@
----
-title: "The USB"
-date: 2025-12-25
-categories: [blog]
-tags: [welcome]
----
 
-Your content here. You can use **Markdown** formatting.
 
 ## Introduction
 Hi there, this is my first blog and shot at making one about digital forensics.
