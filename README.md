@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
@@ -292,3 +293,6 @@ Clipboard.js is distributed under the terms of the [MIT License](https://opensou
 # bnuy621.github.io
 testing
 >>>>>>> 81a1d980828ff7963818a589fd183548fb6d7c6a
+=======
+
+>>>>>>> f14f94cfdf0da58f1dbb83ef7d71e946c22c4d70
