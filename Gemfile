@@ -1,2 +1,10 @@
 source "https://rubygems.org"
-gemspec
+
+gem "jekyll", "~> 4.4"
+gem "jekyll-include-cache"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "jekyll-gist"
+gem "jekyll-feed"
+gem "webrick"
+gem "logger"
