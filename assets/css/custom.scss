@@ -1,0 +1,18 @@
+---
+---
+
+@import "minimal-mistakes";
+
+// Custom header height for consistency
+.page__hero {
+  height: 400px;
+  
+  .page__hero-image {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.page__hero--overlay {
+  height: 400px;
+}
