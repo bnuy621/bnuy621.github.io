@@ -3,7 +3,7 @@ title: Bridging matrix to  discord
 date: 2026-03-02 12:00:00 +/-TTTT
 categories: [General]
 tags: [General]     # TAG names should always be lowercase
-descrption: Guide to bridging matrix to discord
+description: Guide to bridging matrix to discord
 toc: true
 ---
 ## Introduction

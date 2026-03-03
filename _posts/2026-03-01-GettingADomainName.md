@@ -3,7 +3,7 @@ title: Getting a domain name
 date: 2026-03-01 12:00:00 +/-TTTT
 categories: [General]
 tags: [General]     # TAG names should always be lowercase
-descrption: Straightforward guide to getting a domain name for free
+description: Straightforward guide to getting a domain name for free
 toc: true
 ---
 ## Introduction
