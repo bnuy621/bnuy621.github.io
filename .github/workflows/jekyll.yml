@@ -1,8 +1,8 @@
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -33,15 +33,22 @@ jobs:
         with:
           ruby-version: '3.4.1'
           bundler-cache: true
+          cache-version: 0
           
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        id: pages
+        uses: actions/configure-pages@v5
         
       - name: Install npm dependencies
         run: npm ci
         
-      - name: Build CSS
-        run: npm run build
+      - name: Initialize theme (build assets)
+        run: |
+          npm run build
+          # If there's an init script, run it
+          if [ -f "tools/init" ]; then
+            bash tools/init
+          fi
         
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
