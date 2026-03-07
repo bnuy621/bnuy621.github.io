@@ -15,7 +15,7 @@ Today i will be covering how to make your own sprite for the item 'Daawnlight Sp
 ![screenshot of DSO mod](assets/posts/post6/post6_img1_old_new.png)
 
 ## Extracting the sprite sheet
-Firstly, we need the current sprite sheet so that we can alter it to our liking. This can be done via extracting the files the mod , altering the files and recompiling the mod update it with our new sprite sheet.  In this case, i will be using the 'DSO sprite expansion mod'.
+Firstly, we need the current sprite sheet so that we can alter it to our liking. This can be done via extracting the files from the mod, altering the files and recompiling the mod update it with our new sprite sheet.  In this case, i will be using the 'DSO sprite expansion mod'.
 
 ![screenshot of DSO mod](assets/posts/post6/post6_img3_DSOMOD.png)
 
@@ -44,7 +44,7 @@ Copy the images into a folder and tweak it to your liking. The frames on the lef
 
 ![screenshot of edit sprite](assets/posts/post6/post6_img13_editsprite.png)
 
-![screenshot of edit buff](assets/posts/post6/post6_img13_editbuff.png)
+![screenshot of edit buff](assets/posts/post6/post6_img14_editbuff.png)
 
 ## Recompiling the mod
 Now, go back to the folder where the extracted content is stored , copy the folder containing the mod somewhere.
