@@ -261,13 +261,13 @@ We will now modify docker-compose.yml to include our database for mautrix-discor
 Add this to docker-compose.yml:
 
 ```bash
-mautrix-postgres:
+mautrix-postgres-bot:
     image: postgres:16-alpine
-    container_name: mautrix-postgres
+    container_name: mautrix-postgres-bot
     restart: unless-stopped
     environment:
-      POSTGRES_PASSWORD: MAUTRIX_POSTGRES
-      POSTGRES_USER: mautrix
+      POSTGRES_PASSWORD: MAUTRIX_POSTGRES_BOT_PASSWORD
+      POSTGRES_USER: mautrix_postgres_bot
       POSTGRES_DB: mautrix_discord
     volumes:
       - ./mautrix-postgres-data:/var/lib/postgresql/data
@@ -278,7 +278,7 @@ mautrix-postgres:
       retries: 5
 ```
 
-We will be using this same POSTGRES_PASSWORD later on for configuring our mautrix-discord service.
+We will be using this same 'POSTGRES_PASSWORD' later on for configuring our mautrix-discord-bot service.
 
 
 
