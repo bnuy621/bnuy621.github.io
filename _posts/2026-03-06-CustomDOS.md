@@ -1,9 +1,9 @@
 ---
-title: How to make your own DOS sprite
+title: How to alter a teraria mod
 date: 2026-03-06 12:00:00 +/-TTTT
 categories: [Misc]
 tags: [Terraria] 
-description: Guide to making your own DOS sprite
+description: Guide to altering a terraria mod
 toc: true
 ---
 ## Disclaimer
