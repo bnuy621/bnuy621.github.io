@@ -1,0 +1,59 @@
+---
+title: Flipper zero BadKB
+date: 2026-03-08 00:00:00 +0000
+categories: [flipper]
+tags: [non technical]     # TAG names should always be lowercase
+description: Straightforward guide to getting a domain name for free
+toc: true
+---
+
+## Introudction
+This guide covers how to use the BadKB function on flipper zero.
+
+## Prerequisites
+Have momentum installed on your flipper zero as i will be using that for today's guide.
+
+## What is BadKB
+BadKB or Bad keyboard is essentially a script of planned keystrokes which will be typed very fast. Think of it as an insutrction sheet for someone on which keys to press.
+
+## Making your own script
+I will be making a simple script that types the phrase 'Hello world' 4 times on my terminal. Firstly, create a text file called 'hello_world.txt':
+
+![screenshot of file](assets/posts/post8/post8_img1_nano.png)
+
+The scripting language used will be the Rubber Ducky Scripting Language 1.0 (<https://web.archive.org/web/20220816200129/http://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript>). As my shortcut to open the terminal is the SUPER + T. The script will look like this:
+
+```bash
+DEFAULT_DELAY 500
+GUI T
+REM this presses the SUPER key with T afterwards.
+STRING HELLO WORLD
+REPEAT 4
+REM this repeats the previous command 4 times.
+```
+
+## Uploading the script
+Open up qflipper, click on the file icon, go to the 'badusb' folder and upload your text file there:
+
+![screenshot of upload file](assets/posts/post8/post8_img2_upload.png)
+
+## Running the script
+On your flipper, click on the round button:
+
+![screenshot of upload file](assets/posts/post8/post8_img3_apps.png)
+
+scroll down till you see 'BadKB':
+
+![screenshot of upload file](assets/posts/post8/post8_img4_BadKB.png)
+
+Click the round button and scroll using the arrow buttons till you see your file. In this case it is 'hello_world':
+
+![screenshot of upload file](assets/posts/post8/post8_img5_script.png)
+
+Click on the round button to use this script and click again on it again o run the script. After it is done running, you will see 100% on the screen which means the script finished running without any errors.
+
+![screenshot of upload file](assets/posts/post8/post8_img6_result.png)
+
+
+## Conclusion
+This is a simple guide on how to use the BadUSB function. You won't need a flipper to use one as shown here using a raspberry pi pico works too (<https://github.com/dbisu/pico-ducky>)

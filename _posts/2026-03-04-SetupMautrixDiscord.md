@@ -1,9 +1,9 @@
 ---
 title: "Setting up Mautrix Discord"
 date: 2026-03-03 12:00:00 +/-TTTT
-categories: [General]
-tags: [matrix]    
-description: 
+categories: [matrix]
+tags: [technical]    
+description: Still a WIP
 toc: true
 ---
 ## Introduction

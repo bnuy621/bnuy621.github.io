@@ -1,13 +1,13 @@
 ---
 title: How to alter a teraria mod
 date: 2026-03-06 12:00:00 +/-TTTT
-categories: [Misc]
-tags: [Terraria] 
+categories: [misc]
+tags: [terraria] 
 description: Guide to altering a terraria mod
 toc: true
 ---
 ## Disclaimer
-This post serves to only guide others how to modify a existing terraria mod. I do not encourage the plagarism of other people's mod using this guide.
+This post serves to only guide others how to modify a existing terraria mod. I do not encourage the plagarism of other people's mods.
 
 ## Introduction
 Today i will be covering how to make your own sprite for the item 'Daawnlight Spirit Origin' from the Terraria Calamity Mod. This was done as i was not satisified with the new sprite which looks worse than the original (old on the left, new on the right):
