@@ -1,8 +1,8 @@
 ---
 title: How to use mautrix-discord
 date: 2026-03-04 12:00:00 +/-TTTT
-categories: [General]
-tags: [matrix] 
+categories: [matrix]
+tags: [non technical] 
 description: Guide to using mautrix-discord
 toc: true
 ---
@@ -11,10 +11,10 @@ toc: true
 This post will cover how to use mautrix-discord. 
 
 ## Prerequisites
-You must have set it up , if you have not refer to this post(<https://bnuy621.github.io/posts/SetupMautrixDiscord/>)
+mautrix-discord is set up, if you have not refer to this post(<https://bnuy621.github.io/posts/SetupMautrixDiscord/>)
 
 ## Setting up the discord bot
-Firstly, login to the discord developer portal using your discord account (<https://discord.com/developers/applications>). It is best to have 2FA enabled via your authenticator app for this account. After logging in, you should see a button "New Application". 
+Firstly, login to the discord developer portal using your discord account (<https://discord.com/developers/applications>). It is best to have 2FA enabled via your authenticator app for this account. After logging in, you should see a button "New Application":
 
 ![screenshot of create new app](assets/posts/post5/post5_img2_createnewapp.png)
 
