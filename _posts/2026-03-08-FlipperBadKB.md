@@ -3,7 +3,7 @@ title: Flipper zero BadKB
 date: 2026-03-08 00:00:00 +0000
 categories: [flipper]
 tags: [non technical]     # TAG names should always be lowercase
-description: Straightforward guide to getting a domain name for free
+description: Straightforward guide to using the BadKB function on a flipper zero
 toc: true
 ---
 
@@ -37,7 +37,7 @@ Open up qflipper, click on the file icon, go to the 'badusb' folder and upload y
 
 ![screenshot of upload file](assets/posts/post8/post8_img2_upload.png)
 
-## Running the script
+## Running the script 
 On your flipper, click on the round button:
 
 ![screenshot of upload file](assets/posts/post8/post8_img3_apps.png)
@@ -50,10 +50,10 @@ Click the round button and scroll using the arrow buttons till you see your file
 
 ![screenshot of upload file](assets/posts/post8/post8_img5_script.png)
 
-Click on the round button to use this script and click again on it again o run the script. After it is done running, you will see 100% on the screen which means the script finished running without any errors.
+The default method to run the script is via USB cable. Click on the round button to use this script and click again on it again to run the script. After it is done running, you will see 100% on the screen which means the script finished running without any errors.
 
 ![screenshot of upload file](assets/posts/post8/post8_img6_result.png)
 
-
+To change it to run via bluetooth, click on the right arrow to change it to BLE. Afterwards 
 ## Conclusion
 This is a simple guide on how to use the BadUSB function. You won't need a flipper to use one as shown here using a raspberry pi pico works too (<https://github.com/dbisu/pico-ducky>)
