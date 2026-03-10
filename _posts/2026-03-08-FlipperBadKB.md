@@ -3,12 +3,12 @@ title: Flipper zero BadKB
 date: 2026-03-08 00:00:00 +0000
 categories: [flipper]
 tags: [non technical]     # TAG names should always be lowercase
-description: Straightforward guide to using the BadKB function on a flipper zero
+description: Guide to using the BadKB function on a flipper zero
 toc: true
 ---
 
 ## Introudction
-This guide covers how to use the BadKB function on flipper zero.
+This guide covers how to use the BadKB (Bad Keyboard) function on the flipper zero.
 
 ## Prerequisites
 Have momentum installed on your flipper zero as i will be using that for today's guide.
