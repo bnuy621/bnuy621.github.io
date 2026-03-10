@@ -44,6 +44,10 @@ Now, split the GIF into individual images in the PNG format. Take note of the en
 ## Rename the files
 Afterwards, rename the files to be 'frame_0.png, frame_1.png, ...' :
 
+```bash
+i=0; for f in *.png; do mv -- "$f" "frame_$((i++)).png"; done
+```
+
 ![screenshot of frame images](assets/posts/post2/post2_img7_frames.png)
 
 ## Create meta.txt

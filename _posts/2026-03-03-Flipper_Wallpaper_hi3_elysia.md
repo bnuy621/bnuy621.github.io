@@ -7,42 +7,67 @@ description: These are available for download at https://github.com/bnuy621/Flip
 toc: true
 ---
 ## Elysia1
-Animation:
 
-![screenshot of elysia1 animation from qflipper](assets/posts/flipper_wallpaper/hi3/elysia/elysia1.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/hi3/elysia/elysia1_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
 
 ## Elysia2
-Animation:
 
-![screenshot of elysia2 animation from qflipper](assets/posts/flipper_wallpaper/hi3/elysia/elysia2.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/hi3/elysia/elysia2_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
 
 ## Elysia3
-Animation:
 
-![screenshot of elysia3 animation from qflipper](assets/posts/flipper_wallpaper/hi3/elysia/elysia3.png)
-
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/hi3/elysia/elysia3_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
 
 ## Elysia4
-Animation:
 
-![screenshot of elysia4 animation from qflipper](assets/posts/flipper_wallpaper/hi3/elysia/elysia4.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/hi3/elysia/elysia4_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
 
 ## Elysia5
-Animation:
 
-![screenshot of elysia5 animation from qflipper](assets/posts/flipper_wallpaper/hi3/elysia/elysia5.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/hi3/elysia/elysia5_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
 
 ## Elysia6
-Animation:
 
-![screenshot of elysia6 animation from qflipper](assets/posts/flipper_wallpaper/hi3/elysia/elysia6.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/hi3/elysia/elysia6_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
 
 ## Elysia7
-Animation:
 
-![screenshot of elysia7 animation from qflipper](assets/posts/flipper_wallpaper/hi3/elysia/elysia7.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/hi3/elysia/elysia7_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
 
 ## Elysia8
-Animation:
 
-![screenshot of elysia8 animation from qflipper](assets/posts/flipper_wallpaper/hi3/elysia/elysia8.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/hi3/elysia/elysia8_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>

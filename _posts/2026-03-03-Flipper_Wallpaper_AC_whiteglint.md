@@ -7,31 +7,54 @@ description: These are available for download at https://github.com/bnuy621/Flip
 toc: true
 ---
 ## white_glint
-Animation:
 
-![screenshot of white_glint animation from qflipper](assets/posts/flipper_wallpaper/AC/white_glint/white_glint.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/AC/white_glint/white_glint.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
 
 ## white_glint_battle
-Animation:
 
-![screenshot of white_glint_battle animation from qflipper](assets/posts/flipper_wallpaper/AC/white_glint/white_glint_battle.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/AC/white_glint/white_glint_battle.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
 
 ## white_glint_battle2
-Animation:
 
-![screenshot of white_glint_battle2 animation from qflipper](assets/posts/flipper_wallpaper/AC/white_glint/white_glint_battle2.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/AC/white_glint/white_glint_battle2.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
 
 ## white_glint_bootup
-Animation:
 
-![screenshot of white_glint_bootup animation from qflipper](assets/posts/flipper_wallpaper/AC/white_glint/white_glint_bootup.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/AC/white_glint/white_glint_bootup.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
 
 ## white_glint_construct
-Animation:
 
-![screenshot of white_glint_construct animation from qflipper](assets/posts/flipper_wallpaper/AC/white_glint/white_glint_construct.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/AC/white_glint/white_glint_construct.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
 
 ## white_glint_takeoff
-Animation:
 
-![screenshot of white_glint_takeoff animation from qflipper](assets/posts/flipper_wallpaper/AC/white_glint/white_glint_takeoff.png)
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/AC/white_glint/white_glint_takeoff.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
+
