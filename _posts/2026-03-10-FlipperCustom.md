@@ -8,7 +8,7 @@ toc: true
 ---
 
 ## Introduction
-This guide covers how to install a custom firmware on the flipper zero. This is useful as most of my guides related to it is using the momentum firmware.
+This guide covers how to install a custom firmware on the flipper zero. This is useful as most of my guides i make about the flipper zero is done using the momentum firmware.
 
 ## Prerequisites
 Have qflipper installed.

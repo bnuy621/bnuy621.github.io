@@ -11,11 +11,10 @@ toc: true
 This guide covers how to use the BadKB (Bad Keyboard) function on the flipper zero.
 
 ## Prerequisites
-Have momentum installed on your flipper zero as i will be using that for today's guide.
+Have momentum installed on your flipper zero as i will be using that for today's guide If you have not refer to this guide: <>.
 
-## What is BadKB
-BadKB or Bad keyboard is essentially a script of planned keystrokes which will be typed very fast. Think of it as an insutrction sheet for someone on which keys to press.
-
+## How does it work?
+Taken from a comment on a reddit post (<https://www.reddit.com/r/flipperzero/comments/xdktd1/how_does_a_bad_usb_work/>), 'BadUSB is a function that allows the flipper to emulate a keyboard. It then emulates the keys typed onto the keyboard with keys typed depending on the script you use.'
 ## Making your own script
 I will be making a simple script that types the phrase 'Hello world' 4 times on my terminal. Firstly, create a text file called 'hello_world.txt':
 
