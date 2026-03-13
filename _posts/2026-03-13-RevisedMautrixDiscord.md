@@ -136,7 +136,7 @@ curl example.org
 ```
 
 ## Creating the folders for it
-I will be using /matrix2 in this case:
+I will be using `/matrix2` in this case:
 
 ```bash
 mkdir -p /matrix2/synapse /matrix2/mautrix-discord-bot
@@ -259,7 +259,7 @@ namespaces:
 de.sorunome.msc2409.push_ephemeral: true
 push_ephemeral: true
 ```
-Edit the values of users. These are the names your bot and 'relayed' users will have.
+Edit the values of `users`. These are the names your bot and 'relayed' users will have.
 
 ## Generating new as_token and hs_token:
 
@@ -302,7 +302,10 @@ Database:
         max_conn_lifetime: null
 ```
 
-Name of your bot. This should match with config.yaml first user that is exclusive
+Name of your bot. This should match with `registration.yaml`'s first user that is exclusive
+
+`Config.yaml`:
+
 ```bash
 # The unique ID of this appservice.
     id: discord
@@ -317,6 +320,8 @@ Name of your bot. This should match with config.yaml first user that is exclusiv
 
 ```
 
+`Registration.yaml`:
+
 ```bash
 namespaces:
     users:
@@ -324,9 +329,9 @@ namespaces:
           exclusive: true
 ```
 
-Name of puppet users. This should match with config.yaml's second user that is non exclusive
+Name of puppet users. This should match with `registration.yaml`'s second user that is non exclusive
 
-Config.yaml:
+`Config.yaml`:
 
 ```bash
 # Bridge config
@@ -336,7 +341,7 @@ bridge:
     username_template: discordpuppet_{{.}}
 ```
 
-Registration.yaml:
+`Registration.yaml`:
 ```bash
         - regex: ^@discordpuppet_.*:example\.org$
           exclusive: true
