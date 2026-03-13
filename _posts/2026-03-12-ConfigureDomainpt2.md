@@ -1,6 +1,6 @@
 ---
 title: "Configuring a domain name"
-date: 2026-03-03 12:00:00 +/-TTTT
+date: 2026-03-12 12:00:00 +/-TTTT
 categories: [matrix]
 tags: [technical]    
 description: Still a WIP
