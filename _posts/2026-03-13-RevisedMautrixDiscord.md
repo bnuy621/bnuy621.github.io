@@ -322,23 +322,21 @@ Name of your bot. This should match with `registration.yaml`'s first user that i
 
 `Registration.yaml`:
 
-```bash
+```yaml
 namespaces:
     users:
         - regex: ^@discordrelay:example\.org$
           exclusive: true
 ```
 
-Name of puppet users. This should match with `registration.yaml`'s second user that is non exclusive
+Name of puppet users, This should match with `registration.yaml`'s second user that is non exclusive
 
 `Config.yaml`:
 
-```bash
+```yaml
 # Bridge config
 bridge:
-    # Localpart template of MXIDs for Discord users.
-    # {{.}} is replaced with the internal ID of the Discord user.
-    username_template: discordpuppet_{{.}}
+    username_template: discordpuppet_{% raw %}{{.}}{% endraw %}
 ```
 
 `Registration.yaml`:
