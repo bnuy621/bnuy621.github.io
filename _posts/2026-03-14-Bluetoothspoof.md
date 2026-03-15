@@ -3,7 +3,7 @@ title: "Flipper zero BadKB: BLE mode"
 date: 2026-03-14 12:00:00 +/-TTTT
 categories: [flipper]
 tags: [non technical]    
-description: 
+description: Guide to configuring BLE for BadKB on flipper zero
 toc: true
 ---
 
