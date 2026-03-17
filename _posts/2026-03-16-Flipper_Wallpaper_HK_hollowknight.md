@@ -3,7 +3,7 @@ title: "Flipper zero wallpapers : Hollow Knight"
 date: 2026-03-16 00:00:00 +/-TTTT
 categories: [flipper]
 tags: [wallpapers]    
-description: These are available for download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/hi3/elysia
+description: These are available for download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/HK/hollowknight
 toc: true
 ---
 ## hk1

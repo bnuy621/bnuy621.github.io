@@ -3,7 +3,7 @@ title: "Flipper zero wallpapers : Cyrene"
 date: 2026-03-13 12:00:00 +/-TTTT
 categories: [flipper]
 tags: [wallpapers]    
-description: 
+description: Download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/hsr/cyrene
 toc: true
 ---
 
