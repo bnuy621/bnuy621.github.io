@@ -1,6 +1,6 @@
 ---
 title: Bridging matrix to  discord
-date: 2026-03-02 12:00:00 +/-TTTT
+date: 2026-03-03 00:00:00 +0800
 categories: [matrix]
 tags: [technical]
 description: Guide to bridging matrix to discord

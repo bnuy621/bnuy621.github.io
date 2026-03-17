@@ -1,6 +1,6 @@
 ---
 title: Flipper zero BadKB
-date: 2026-03-08 00:00:00 +0000
+date: 2026-03-08 00:00:00 +0800
 categories: [flipper]
 tags: [non technical]     # TAG names should always be lowercase
 description: Guide to using the BadKB function on a flipper zero

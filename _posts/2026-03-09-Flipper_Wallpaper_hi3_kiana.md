@@ -1,6 +1,6 @@
 ---
 title: "Flipper zero wallpapers : Kiana"
-date: 2026-03-09 12:00:00 +/-TTTT
+date: 2026-03-09 00:00:00 +0800
 categories: [flipper]
 tags: [wallpapers]    
 description: Download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/hi3/kiana

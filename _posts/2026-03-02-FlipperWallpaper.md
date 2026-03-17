@@ -1,6 +1,6 @@
 ---
 title: Making a custom flipper zero wallpaper
-date: 2026-03-01 12:00:00 +/-TTTT
+date: 2026-03-02 00:00:00 +0800
 categories: [flipper]
 tags: [non technical]     # TAG names should always be lowercase
 description: Guide to making a custom flipper zero wallpaper
