@@ -1,6 +1,6 @@
 ---
 title: How to alter a teraria mod
-date: 2026-03-06 12:00:00 +/-TTTT
+date: 2026-03-06 00:00:00 +0800
 categories: [misc]
 tags: [terraria] 
 description: Guide to altering a terraria mod

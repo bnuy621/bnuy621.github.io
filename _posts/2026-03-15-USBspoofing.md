@@ -1,6 +1,6 @@
 ---
 title: "Flipper zero BadKB: USB mode"
-date: 2026-03-15 12:00:00 +/-TTTT
+date: 2026-03-15 00:00:00 +0800
 categories: [flipper]
 tags: [non technical]    
 description: Guide to configuring USB mode

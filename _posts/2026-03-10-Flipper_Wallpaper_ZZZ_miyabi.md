@@ -1,6 +1,6 @@
 ---
 title: "Flipper zero wallpapers : Miyabi"
-date: 2026-03-10 12:00:00 +/-TTTT
+date: 2026-03-10 00:00:00 +0800
 categories: [flipper]
 tags: [wallpapers]    
 description: Download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/ZZZ/miyabi

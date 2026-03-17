@@ -1,6 +1,6 @@
 ---
 title: How to use mautrix-discord
-date: 2026-03-04 12:00:00 +/-TTTT
+date: 2026-03-05 00:00:00 +0800
 categories: [matrix]
 tags: [non technical] 
 description: Guide to using mautrix-discord

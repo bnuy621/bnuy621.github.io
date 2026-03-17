@@ -1,6 +1,6 @@
 ---
 title: Installing a custom flipper zero firmware
-date: 2026-03-10 00:00:00 +0000
+date: 2026-03-10 00:00:00 +0800
 categories: [flipper]
 tags: [non technical]     # TAG names should always be lowercase
 description: Guide to installing custom firmware on the flipper zero

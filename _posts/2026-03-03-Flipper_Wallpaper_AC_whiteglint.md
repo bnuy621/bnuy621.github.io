@@ -1,6 +1,6 @@
 ---
 title: "Flipper zero wallpapers : White Glint"
-date: 2026-03-02 12:00:00 +/-TTTT
+date: 2026-03-03 00:00:00 +0800
 categories: [flipper]
 tags: [wallpapers]    
 description: These are available for download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/AC/whiteglint

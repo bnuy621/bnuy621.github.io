@@ -1,6 +1,6 @@
 ---
 title: "Configuring Mautrix Discord"
-date: 2026-03-13 12:00:00 +/-TTTT
+date: 2026-03-13 00:00:00 +0800
 categories: [matrix]
 tags: [technical]    
 description: 
