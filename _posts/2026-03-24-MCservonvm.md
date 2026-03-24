@@ -121,7 +121,11 @@ Execute `run.sh`:
 Once it is done booting up, detach from the `main` space via pressing `CTRL A` followed `D`. The terminal will show `[detached from XXXX main]`. Now exit the SSH session.
 
 ## Results
+Your server should work now, add its IP followed by port `25565` and connect:
+
+![cte2 works](assets/posts/post28/post28_img6_works.png)
 
 ## Conclusion
 
+So should you rent a cloud VM or pay for a service that specialises in hosting minecraft servers? The answer is to just use a minecraft server hosting service as it is way cheaper than paying for the entire cloud VM.
 
