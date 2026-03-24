@@ -3,7 +3,7 @@ title: "Flipper zero wallpapers : Chisa"
 date: 2026-03-24 00:00:00 +0800
 categories: [flipper]
 tags: [wallpapers]    
-description: These are available for download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/HK/hollowknight
+description: These are available for download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/wuwa/chisa
 toc: true
 ---
 
