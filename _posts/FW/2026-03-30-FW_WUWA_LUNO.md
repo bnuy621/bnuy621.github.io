@@ -3,7 +3,7 @@ title: "Flipper zero wallpapers : Luno"
 date: 2026-03-30 00:00:00 +0800
 categories: [flipper]
 tags: [wallpapers]    
-description: These are available for download at 
+description: These are available for download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/wuwa/luno
 toc: true
 ---
 

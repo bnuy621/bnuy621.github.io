@@ -3,7 +3,7 @@ title: "Flipper zero wallpapers : Lupa"
 date: 2026-03-30 00:00:00 +0800
 categories: [flipper]
 tags: [wallpapers]    
-description: This is available for download at 
+description: This is available for download at https://github.com/bnuy621/Flipper-zero-wallpapers/tree/new_anims/wuwa/lupa
 toc: true
 ---
 
