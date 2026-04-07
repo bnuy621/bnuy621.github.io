@@ -194,6 +194,7 @@ Now reboot.
 
 To get it to work , click on menu (on the top right) > `data sources` > select your data source > `enable source` and you will now see information overflowing your screen. Now enjoy!
 
+Also there will be a `.kismet` file in your home directory.
 ## Installing CYT
 
 ### Clone the repo
@@ -202,16 +203,14 @@ To get it to work , click on menu (on the top right) > `data sources` > select y
 https://github.com/ArgeliusLabs/Chasing-Your-Tail-NG.git
 ```
 
-This will take a while:
 
-(img from phone)
-
-Cd:
+### Installing requirments
+Enter its folder:
 
 ```bash
 cd "Chasing-Your-Tail-NG"
 ```
-### Installing requirments
+
 Create venv:
 
 ```bash
@@ -230,12 +229,18 @@ Installing requirements in `.venv`:
 ```bash
 pip3 install -r requirements.txt
 ```
-Ensure you're in `.venv`:
 
-(img from phone)
+### Config.json
+
+```bash
+nano config.json
+```
+
+Change `kismet_logs` to be `/home/<username>/*.kismet` due to kismet logs stored in the user's home directory.
 
 ### Security setup
 
+Ensure you're in `.venv`:
 ```bash
 # Migrate credentials from insecure config.json
 python3 migrate_credentials.py
@@ -245,18 +250,12 @@ python3 chasing_your_tail.py
 # Should show: "🔒 SECURE MODE: All SQL injection vulnerabilities have been eliminated!"
 ```
 
-You will get this error due to not having properly configured it:
+To start it with a GUI:
 
-(img from phone)
+```bash
+python3 cyt_gui.py
+```
 
-### Config.json
+And that's it.
 
-We will now proceed to start `kismet` once to load the files. Go through the configuration and stuff idfk atp lmao
 
-## Starting it
-
-I jumped a lot of steps and its 2 but so far this is what I DID:
-
-1. sudo airmon-ng start > this will kill stuff and u will see network disconnect but its aight?
-2. sudo airmong-ng > you will see a `wlanX` with `mon` this means it is in monitor mode > all good from now
-3. start `kismet` via the script in CYT.
