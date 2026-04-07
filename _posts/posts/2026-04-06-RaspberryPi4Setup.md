@@ -12,7 +12,6 @@ Setting up chase your tail on the pi4.
 
 ## What I am using
 A raspberry pi 4B running the latest OS
-A LCD screen
 A tp-link Archer T2U Plus Ver1.0
 
 
@@ -48,7 +47,7 @@ Afterwards, run `sudo rpi-imager` and it will work. Proceed with imaging it. Tak
 
 
 ## Updating the OS
-Now upgrade the system on the raspberry pi 4:
+After successfully booting up rasbian, now upgrade your system:
 
 ```bash
 sudo apt update && sudo apt full-upgrade -y
@@ -59,97 +58,6 @@ sudo reboot
 
 
 
-## LCD screen
-Now shut down the Pi 4 and attach the LCD screen. Power it back on afterwards. The screen will be blank for now.
-
-These commands are taken from here: <https://www.waveshare.com/wiki/3.2inch_RPi_LCD_(B)>
-
-### Configure driver
-
-Open bash and run:
-
-```bash
-sudo apt-get install unzip -y
-sudo apt-get install cmake -y
-wget https://files.waveshare.com/wiki/common/Waveshare32b.zip
-unzip ./Waveshare32b.zip
-sudo cp waveshare32b.dtbo /boot/overlays/
-```
-To edit config.txt:
-
-```bash
-Edit config.txt file
-```
-
-Block these statements:
-
-```bash
-# Enable DRM VC4 V3D driver
-#dtoverlay=vc4-kms-v3d
-#max_framebuffers=2
-```
-
-Add these:
-
-```bash
-dtparam=spi=on
-dtoverlay=waveshare32b
-hdmi_force_hotplug=1
-max_usb_current=1
-hdmi_group=2
-hdmi_mode=87
-hdmi_cvt 320 240 60 6 0 0 0
-hdmi_drive=2
-display_rotate=0
-```
-
-### Set auto-start on boot
-
-Edit `.bash_profile`:
-
-```bash
-sudo nano ~/.bash_profile
-```
-
-Add:
-
-```bash
-export FRAMEBUFFER=/dev/fb1
-startx  2> /tmp/xorg_errors
-```
-
-Edit `99-fbturbo.~ file`:
-
-```bash
-sudo nano /usr/share/X11/xorg.conf.d/99-fbturbo.~
-```
-
-Add:
-
-```bash
-Section "Device"
-        Identifier      "Allwinner A10/A13 FBDEV"
-        Driver          "fbturbo"
-        Option          "fbdev" "/dev/fb0"
-
-        Option          "SwapbuffersWait" "true"
-EndSection
-```
-
-### Set CLI auto-login
-
-```bash
-sudo raspi-config nonint do_boot_behaviour B2
-sudo raspi-config nonint do_wayland W1
-sudo reboot
-```
-
-After rebooting, UI will now be on the LCD. However, touch is still not implemented yet.
-
-(img of it from phone)
-
-### Configure touch
-Yea no just dont as its bad either way
 
 
 ## Configure wifi
@@ -162,9 +70,51 @@ You might be asking why buy ANOTHER wifi adapter when it already comes with one.
 I will be following this guide <https://github.com/lwfinger/rtw88>
 
 
-Afterwards, reboot and run `lsmod | grep -i rtw`. You will see the drivers
+### 1 - Install dkms
 
-(img of drivers from phone)
+```bash
+sudo apt install dkms
+```
+### 2 - Clone the rtw88 GitHub repository
+
+
+```bash
+git clone https://github.com/lwfinger/rtw88
+```
+
+### 3 - Build, sign, and install the rtw88 driver
+
+```bash
+cd rtw88
+```
+
+```bash
+sudo dkms install $PWD
+```
+### 4 - Install the firmware necessary for the rtw88 driver
+
+```bash
+sudo make install_fw
+```
+### 5 - Copy the configuration file rtw88.conf to /etc/modprobe.d/
+
+```bash
+sudo cp rtw88.conf /etc/modprobe.d/
+```
+
+Afterwards, reboot and run `lsmod | grep -i rtw`. You will see the drivers AND the usb adapter will now have a green light indicating its in use:
+
+(img of it)
+
+### 6 - disabling built in adapter
+
+The pi 4 will use `wlan0` which is the built in adapter. Hence we will now disable to built in adapter
+
+Add this to `/boot/firmware/config.txt`:
+
+```bash
+dtoverlay=disable-wifi
+```
 
 
 ## Installing requisites for Chasing your tail
@@ -174,19 +124,53 @@ Most will have python installed. Run `python3 --version` to ensure it is above `
 
 
 ### Kismet
-I will be following this guide <https://www.kismetwireless.net/docs/readme/installing/linux/>
+I will be following this guide <https://www.kismetwireless.net/docs/readme/installing/linux/>. However i will paste the commands i used here for my own future reference as well as to hopefully save the annoyance of switching between multiple tabs.
 
+### 1 - Install dependencies
 
-When cloning kismet, it will take a while
+```bash
+sudo apt install build-essential git libwebsockets-dev pkg-config \
+zlib1g-dev libnl-3-dev libnl-genl-3-dev libcap-dev libpcap-dev \
+libnm-dev libdw-dev libsqlite3-dev libsensors-dev libusb-1.0-0-dev \
+libubertooth-dev libbtbb-dev libmosquitto-dev librtlsdr-dev
+```
+### 2 - rtl433 support
+Im not too sure if i need this but just in case:
 
-(img from phone)
+```bash
+sudo apt install rtl-433
+```
 
+### 3 - clone repo
+```bash
+git clone https://www.kismetwireless.net/git/kismet.git
+```
 
-When compiling it, it will take a long time 
+### 4 - configure
 
-(img from phone)
+```bash
+cd kismet
+./configure
+```
+### 5 - compile
 
-Installing:
+update the version file:
+
+```bash
+make version
+```
+
+Then, compile Kismet and the Kismet tools:
+
+```bash
+make
+```
+You can accelerate the process by adding -j #, depending on how many CPUs you have. To automatically compile on all the available cores:
+
+```bash
+make -j$(nproc)
+```
+I will be using `make -j2` as i only have 4GB ram on the pi4
 
 ```bash
 sudo make suidinstall
@@ -207,6 +191,8 @@ sudo usermod -aG kismet your-user-here
 ```
 
 Now reboot.
+
+To get it to work , click on menu (on the top right) > `data sources` > select your data source > `enable source` and you will now see information overflowing your screen. Now enjoy!
 
 ## Installing CYT
 
@@ -265,5 +251,12 @@ You will get this error due to not having properly configured it:
 
 ### Config.json
 
-We will now proceed to start `kismet` once to load the files.
+We will now proceed to start `kismet` once to load the files. Go through the configuration and stuff idfk atp lmao
 
+## Starting it
+
+I jumped a lot of steps and its 2 but so far this is what I DID:
+
+1. sudo airmon-ng start > this will kill stuff and u will see network disconnect but its aight?
+2. sudo airmong-ng > you will see a `wlanX` with `mon` this means it is in monitor mode > all good from now
+3. start `kismet` via the script in CYT.
