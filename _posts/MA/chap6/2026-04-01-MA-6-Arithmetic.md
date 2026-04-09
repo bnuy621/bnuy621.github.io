@@ -53,7 +53,7 @@ printf("a is %d\n", a);
 ```
 
 ### Assembly
-![](assets/posts/MA/post6/add.png)
+![](assets/posts/MA/chap6/post6/add.png)
 
 ## Subtraction
 
@@ -65,7 +65,7 @@ printf("a is %d\n", a);
 ```
 
 ### Assembly
-![](assets/posts/MA/post6/sub.png)
+![](assets/posts/MA/chap6/post6/sub.png)
 
 
 ## Decrement
@@ -77,7 +77,7 @@ printf("a is %d\n", a);
 ```
 
 ### Assembly
-![](assets/posts/MA/post6/dec.png)
+![](assets/posts/MA/chap6/post6/dec.png)
 
 
 ## Increment
@@ -88,7 +88,7 @@ printf("a is %d\n", a);
     printf("a is %d\n", a);
 ```
 ### Assembly
-![](assets/posts/MA/post6/inc.png)
+![](assets/posts/MA/chap6/post6/inc.png)
 
 
 ## Mulitplication
@@ -98,7 +98,7 @@ printf("a is %d\n", a);
     printf("a is %d\n", a);
 ```
 ### Assembly
-![](assets/posts/MA/post6/mul2.png)
+![](assets/posts/MA/chap6/post6/mul2.png)
 
 
 We can see here that `shl` was used to shift it one bit to the left. This is a trick used to make multiplication faster.
@@ -119,7 +119,7 @@ shl eax, 2      ; EAX = 40 (binary 00101000) - Multiplied by 4 (total shift of 3
 ```
 
 ### Assembly
-![](assets/posts/MA/post6/mod.png)
+![](assets/posts/MA/chap6/post6/mod.png)
 
     
 We can see here that lots of optimisations was used such as multiplying by a certain number in this `55555556h` and using `shr` .

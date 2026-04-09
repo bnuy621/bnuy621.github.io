@@ -28,17 +28,17 @@ int main(void)
 ```
 
 ### Assembly
-![](assets/posts/MA/post8/global_assembly.png)
+![](assets/posts/MA/chap6/post8/global_assembly.png)
 
 
 ### Explanation
 
 We can see here that the global variables X and Y are assigned values before `__main()` was called:
-![](assets/posts/MA/post8/global_pt1.png)
+![](assets/posts/MA/chap6/post8/global_pt1.png)
 
 This is where the `x = x+y` takes place. Firstly, the values of `x` and `y` are loaded into `edx` and `eax` respectively. This is followed by `add eax, edx` AKA `y+x`. Lastly, this value is moved to the specialised register holding the value of `x`. This causes the value of `x` to be that of `x+y`.
 
-![](assets/posts/MA/post8/global_pt2.png)
+![](assets/posts/MA/chap6/post8/global_pt2.png)
 
 
 Afterwards this value is displayed as inferred from the `printf` call.
@@ -59,20 +59,20 @@ int main(void)
 }
 ```
 ### Assembly
-![](assets/posts/MA/post8/local_assembly.png)
+![](assets/posts/MA/chap6/post8/local_assembly.png)
 
 ### Explanation
 We can see here that the local variables `x` and `y` are initialised with a negative offset:
 
-![](assets/posts/MA/post8/local_pt1.png)
+![](assets/posts/MA/chap6/post8/local_pt1.png)
 
 
 After `__main` was called, the values `1` and `2` were stored into X and Y:
 
-![](assets/posts/MA/post8/local_pt2.png)
+![](assets/posts/MA/chap6/post8/local_pt2.png)
 
 The values of `x` and `y` were added with the result being stored to `x`. Hence, `x=x+y`:
 
-![](assets/posts/MA/post8/local_pt3.png)
+![](assets/posts/MA/chap6/post8/local_pt3.png)
 
 
