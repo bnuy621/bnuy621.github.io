@@ -108,7 +108,7 @@ Afterwards, reboot and run `lsmod | grep -i rtw`. You will see the drivers AND t
 
 ### 6 - disabling built in adapter
 
-The pi 4 will use `wlan0` which is the built in adapter. Hence we will now disable to built in adapter
+The pi 4 will use `wlan0` which is the built in adapter. Hence we will now disable to built in adapter. this is not a must but if you want it to default to the usb adapter do it
 
 Add this to `/boot/firmware/config.txt`:
 
