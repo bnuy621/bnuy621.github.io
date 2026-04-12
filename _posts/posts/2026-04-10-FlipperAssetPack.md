@@ -6,7 +6,8 @@ tags: [non technical]
 description: 
 toc: true
 ---
-### GIFs used
+## Introduction
+This asset pack is a WIP, for now i've made the wallpapers for the home screen. Ill update the passport,etc some other time.
 
 ## elysia_tired1
 
