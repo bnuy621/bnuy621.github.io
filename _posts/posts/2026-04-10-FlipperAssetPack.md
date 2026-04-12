@@ -9,68 +9,17 @@ toc: true
 ## Introduction
 This asset pack is a WIP, for now i've made the wallpapers for the home screen. Ill update the passport,etc some other time.
 
-## elysia_tired1
 
-<div class="video-wrapper">
-  <video width="100%" controls>
-    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_tired1_demo.mp4' | relative_url }}" type="video/mp4">
-  </video>
-</div>
+## Butthut
+This is the mood meter the higher it goes, the more pissed off AKA butthurt the `flipper` is. I will divide this into 5 parts. 
 
+1. 0,1,2,3 for happy
+2. 4,5, 6 for neutral
+3. 7,8,9 for tired
+4. 10,11, 12 for angry
+5. 13, 14 for sad
 
-Source: <https://danbooru.donmai.us/posts/11100681?q=elysia_%28honkai_impact%29+>
-source: <https://danbooru.donmai.us/posts/11100679?q=elysia_%28honkai_impact%29+>
-
-
-## elysia_angry1
-
-
-
-<div class="video-wrapper">
-  <video width="100%" controls>
-    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_angry1_demo.mp4' | relative_url }}" type="video/mp4">
-  </video>
-</div>
-
-source: <https://danbooru.donmai.us/posts/11100680?q=sang_sha>
-
-## elysia_angry2
-
-
-
-<div class="video-wrapper">
-  <video width="100%" controls>
-    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_angry2_demo.mp4' | relative_url }}" type="video/mp4">
-  </video>
-</div>
-
-source: <https://danbooru.donmai.us/posts/11100680?q=elysia_%28honkai_impact%29+>
-
-
-
-source: <https://danbooru.donmai.us/posts/11100676?q=elysia_%28honkai_impact%29+>
-
-
-(angry 3 > if interaction > angry 2)
-
-## elysia_neutral1
-
-<div class="video-wrapper">
-  <video width="100%" controls>
-    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_neutral1_demo.mp4' | relative_url }}" type="video/mp4">
-  </video>
-</div>
-source: <https://danbooru.donmai.us/posts/11100678?q=elysia_%28honkai_impact%29+>
-
-## elysia_neutral2
-
-<div class="video-wrapper">
-  <video width="100%" controls>
-    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_neutral2_demo.mp4' | relative_url }}" type="video/mp4">
-  </video>
-</div>
-
-source: <https://danbooru.donmai.us/posts/11100674?q=elysia_%28honkai_impact%29+>
+## Happy
 
 ## elysia_happy1
 
@@ -124,6 +73,74 @@ source: <https://danbooru.donmai.us/posts/11100562?q=elysia_%28honkai_impact%29+
 </div>
 source: <https://danbooru.donmai.us/posts/11100561?q=elysia_%28honkai_impact%29+>
 
+## Neutral
+
+### elysia_neutral1
+
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_neutral1_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+source: <https://danbooru.donmai.us/posts/11100678?q=elysia_%28honkai_impact%29+>
+
+### elysia_neutral2
+
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_neutral2_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
+source: <https://danbooru.donmai.us/posts/11100674?q=elysia_%28honkai_impact%29+>
+
+## Tired
+
+### elysia_tired1
+
+Interactive
+
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_tired1_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
+
+Source: <https://danbooru.donmai.us/posts/11100681?q=elysia_%28honkai_impact%29+> 
+source: <https://danbooru.donmai.us/posts/11100679?q=elysia_%28honkai_impact%29+>
+
+## Angry
+
+### elysia_angry1
+
+
+
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_angry1_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
+source: <https://danbooru.donmai.us/posts/11100680?q=sang_sha>
+
+## elysia_angry2
+
+
+
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_angry2_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
+source: <https://danbooru.donmai.us/posts/11100680?q=elysia_%28honkai_impact%29+>
+source: <https://danbooru.donmai.us/posts/11100676?q=elysia_%28honkai_impact%29+>
+
+
+
+
+
 
 ## elysia_sleep1
 
@@ -165,3 +182,34 @@ source: <https://danbooru.donmai.us/posts/11100670?q=elysia_%28honkai_impact%29+
 </div>
 
 source <https://danbooru.donmai.us/posts/11100669?q=sang_sha>
+
+## Sad
+
+### elysia_sad1
+
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_sad1_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
+source: <https://danbooru.donmai.us/posts/11100476?q=elysia_%28honkai_impact%29+>
+### elysia_sad2
+
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_sad2_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
+source: <https://danbooru.donmai.us/posts/11100475?q=elysia_%28honkai_impact%29+>
+### elysia_sad3
+
+<div class="video-wrapper">
+  <video width="100%" controls>
+    <source src="{{ '/assets/posts/flipper_wallpaper/elysia_AP/elysia_sad3_demo.mp4' | relative_url }}" type="video/mp4">
+  </video>
+</div>
+
+https://danbooru.donmai.us/posts/11100485?q=elysia_%28honkai_impact%29+
+
