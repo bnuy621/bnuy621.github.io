@@ -67,7 +67,7 @@ You will now be greeted by the dashboard:
 
 ![](assets/posts/post34/img7_raspAPdashboard.png)
 
-### Hotspot basic
+### 4 - Hotspot
 
 Go to `Hotspot` > `basic` to configure your AP. 
 ![](assets/posts/post34/img8_raspAP_hotspot_basic.png)
@@ -117,17 +117,33 @@ sudo systemctl enable hostapd
 sudo systemctl start hostapd
 ```
 
-### 5 - my baseline
-My current working configuration (baseline) is this:
 
-![](assets/posts/post34/img10_raspAP_baseline1.png)
-
-![](assets/posts/post34/img11_raspAP_baseline2.png)
-
-![](assets/posts/post34/img12_raspAP_baseline3.png)
-
-![](assets/posts/post34/img13_raspAP_baseline4.png)
-
-![](assets/posts/post34/img14_raspAP_baseline5.png)
 
 So if i mess up later i will revert to this.
+
+### 5 - Potential bugs
+If the wlan interface keeps trying to connect to LAN, run this command to reset it. Ensure you have already configured the wlan interface in step 4 before running this command (especially the DHCP part). 
+
+Run this first:
+
+```bash
+sudo systemctl stop wpa_supplicant
+sudo rm -f /var/run/wpa_supplicant/wlan0
+sudo rm -f /var/run/wpa_supplicant/wlan1
+sudo systemctl restart wpa_supplicant
+```
+Afterwards restart the hotspot and you should see it.
+
+### 7 - Ad Blocker
+Enable ad blocking on the raspAP, Click on `Ad Blocking` and select one of the lists to use. I recommend using `hagezi(light)` 
+
+![](assets/posts/post34/img10_adlist.png)
+
+### 8 - Wireguard
+You will need to first download a Wireguard config file from your current VPN provider (if you are using one). This setting allows you to secure your network traffic. By default it is `upload file`. 
+
+![](assets/posts/post34/img11_WG1.png)
+
+![](assets/posts/post34/img12_WG2.png)
+
+### 9 - Firewall
