@@ -5,6 +5,9 @@ categories: [TESTING]
 tags: [TESTING]     # TAG names should always be lowercase
 description: Testing this out
 toc: true
+image:  
+  path: /assets/img/posts/thumbnail.jpg
+
 ---
 ## Something1
 
