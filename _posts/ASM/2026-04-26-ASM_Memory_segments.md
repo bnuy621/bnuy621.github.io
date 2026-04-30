@@ -29,10 +29,11 @@ segment.text
 _start:
 ```
 
-The screenshot below shows that it can still compile:
+The screenshot below shows that it is still able to compile:
 
 
 ![](assets/posts/ASM/post2/clip.png)
 
 
-
+## References
+<https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm>

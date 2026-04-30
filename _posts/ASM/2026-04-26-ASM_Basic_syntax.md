@@ -65,7 +65,9 @@ As i am running this on Linux, the command to assemble this program with the nam
 
 x86:
 
-`nasm -f elf32 -g -F dwarf sample_program -o sample_program.o `
+To create the object file:
+
+`nasm -f elf32 -o sample_program.o sample_program.asm`
 
 To link the object file to create an executable:
 
@@ -73,11 +75,13 @@ To link the object file to create an executable:
 
 x64:
 
-`nasm -f elf64 -g -F dwarf sample_program -o sample_program.o `
+To create the object file:
+`nasm -f elf64 -g -F dwarf -o sample_program.o sample_program.asm`
 
 To link the object file to create an executable:
 
-`ld -m elf_i386 -s -o sample_program sample_program.o`
+`ld -o example example.o`
 
-
-
+## Refereces:
+<https://www.tutorialspoint.com/assembly_programming/assembly_environment_setup.htm>
+<https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm>

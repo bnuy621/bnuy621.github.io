@@ -1,6 +1,6 @@
 ---
 title: ASM - Registers
-date: 2026-04-25 00:00:00 +0800
+date: 2026-04-27 00:00:00 +0800
 categories: [ASM]
 tags:      # TAG names should always be lowercase
 description: ASM
@@ -85,5 +85,6 @@ Many operations involves comparisons, arithmetic operations that changes the sta
 ## Segment registers
 These registers store the address to a segment of the program. In a program there are 3 main segments with them being `data`, `text` and `stack`.
 
-## others 
-Site that i referenced: <Site that i referenced: <https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm>>
+## References 
+<https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm>>
+<https://github.com/0xAX/asm/blob/master/content/asm_1.md>
