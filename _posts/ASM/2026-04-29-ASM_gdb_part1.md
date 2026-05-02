@@ -24,35 +24,19 @@ Run this command to debug your assembly program with gdb:
 
 `gdb [file_name]`
 
-This is the code of the program i will be using to demostrate how it works:
 
-```
-section .text
-  global _start
-_start:
-  mov rbx,1 
-  mov rax, rbx
-  mov rsi, hellomsg 
-  mov rdx,lenhellomsg 
-  syscall
 
-  mov	rax,60
-  syscall
-
-section .data   
-  hellomsg db `hello\n`
-  lenhellomsg equ $-hellomsg
-```
 ## Note
 Please use a null terminator for each variable if not commands like 'x' will display both the input variable and the rest till it caps out.
 
 
 I will show some of the commonly used commands:
 
-## Displaying assembly code
+## Displaying assembly code - list [filename]
 To view the first 10 lines of the source code of the assembly program, run the following command:
+
 ```
-list 
+list
 ```
 
 ![](assets/posts/ASM/post6/list.png)
