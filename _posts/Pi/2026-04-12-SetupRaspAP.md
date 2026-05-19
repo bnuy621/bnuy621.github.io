@@ -2,7 +2,7 @@
 title: "Setting up RaspAP"
 date: 2026-04-12 00:00:00 +0800
 categories: [raspberry pi]
-tags: [non technical]    
+tags:    
 description: 
 toc: true
 ---

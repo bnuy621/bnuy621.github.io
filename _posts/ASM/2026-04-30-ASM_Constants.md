@@ -38,18 +38,21 @@ _start:
   mov rax, 60
   syscall
 ```
-When trying to view `RESULT_Z` 's value in gdb, i set a breakpoint at line 9 so i can view the register `RAX` which contains RESULT_Z.
+When trying to view `RESULT_Z` 's value in gdb, i set a breakpoint at line 10 so i can view the register `RAX` which contains RESULT_Z.
 
 ![](assets/posts/ASM/post8/EQU.png)
 
-![](assets/posts/ASM/post8/EQU2.png)
 
-
-As when running the command `info  variables` none showed up as seen below:
+When running the command `info  variables`, none showed up as seen below:
 
 ![](assets/posts/ASM/post8/EQU3.png)
 
-This is due to these labels/variables not being initialised in memory and only exist when its assembled. This means you can't really view it in memory via 'info variables'. This is why i retrieved its value via the register it was 'moved' to.
+
+This is due to these labels/variables not being initialised in memory. However, `p/d &[label]` can be used instead:
+
+![](assets/posts/ASM/post8/EQU4.png)
+
+
 
 ## %assign
 This is similar to the `EQU` directive, but you can redefine the constant later on in the code. The syntax for it will be:
@@ -68,22 +71,16 @@ section .text
   global  _start
 _start:
   mov rax, BNUY
-  %assign BNUY 620
+  %assign BNUY 620  ;bp1
   mov rax, BNUY
-  mov rax, 60
+  mov rax, 60 ;bp2
   syscall
 ```
-
-I added 2 breakpoints, one at line 8 and 10 to observe the changes in register `rax`:
-
-![](assets/posts/ASM/post8/assign.png)
- 
-At the first breakpoint i ran `info all-registers`, this shows that `BNUY` had a value of `621`:
+At the first breakpoint RAX has a value of `621` which proves that `BNUY` had a value of `621`:
 
 ![](assets/posts/ASM/post8/assign2.png)
 
-Upon inspection at the next breakpoint, we can see that the value of `rax` is now `620` as shown below:
-
+At the second breakpoint, RAX has a value of `620` as BNUY value changed to 620 earlier on.
 ![](assets/posts/ASM/post8/assign3.png)
 
 This means that the value of `BNUY` changed to `620`
@@ -106,14 +103,10 @@ _start:
   mov rax, 60
   syscall
 ```
-Firstly, i set up my breakpoints at line 9 and 11:
-
-![](assets/posts/ASM/post8/define.png)
-
 
 At the first breakpoint, the value of the register `RAX` is `4202502`:
 
-![](assets/posts/ASM/post8/define2.png)
+![](assets/posts/ASM/post8/define.png)
 
 
 This is an address, to get the constant from this address we will use the following command:
@@ -121,28 +114,10 @@ This is an address, to get the constant from this address we will use the follow
 ```
 x/s [memory_address]
 ```
-This gives us `bnuy` as shown below which corresponds with the assembly code:
 
+This gives the value `bnuy`.
 
-![](assets/posts/ASM/post8/define3.png)
-
-At the second breakpoint, the value of the register `RAX` is `4202496`:
-
-
-![](assets/posts/ASM/post8/define4.png)
-
-Similarly, we will retrieve the constant at the address as shown below:
-
-![](assets/posts/ASM/post8/define5.png)
-
-
-
-As we did not put a terminator this caused it to also output `bnuy` which starts at `4202502`. But we can already guess that it is supposed to be `123456`. To output just `123456`. I will use the following command:
-
-```
-x/<number of bytes to output> [memory address]
-```
-![](assets/posts/ASM/post8/define6.png)
+![](assets/posts/ASM/post8/define2.png)
 
 
 ## References:

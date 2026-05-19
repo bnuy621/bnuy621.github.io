@@ -111,7 +111,6 @@ To view the variables and their sizes in gdb, run the following command:
 ```
 info variables
 ```
-This is the output from `info variables`:
 
 ![](assets/posts/ASM/post7/variables.png)
 
