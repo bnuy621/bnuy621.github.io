@@ -7,10 +7,8 @@ description: ASM
 toc: true
 ---
 
-## Introduction
-This is day 2 of me attempting to learn 32 bit assembly
 ## Registers
-There are ten 32-bit and six 16-bit processor registers in IA-32 architecture. They are grouped into 3 categories: general, control and segments registers
+There are 10 32-bit and 16-bit processor registers in IA-32 architecture. They are grouped into 3 main categories: general, control and segments registers.
 
 ### General
 The general registers further divided into: data, pointer and index registers
@@ -24,7 +22,7 @@ Firstly the whole register can be used:
 MOV EAX,1
 ```
 
-Secondly, the lower halve of the register can be used:
+Secondly, the lower half of the register can be used:
 
 ```
 MOV AX, 1
@@ -41,7 +39,7 @@ Fourthly, the lower half of the lower halve of the register can be used:
 MOV AL, 1
 ```
 
-![](assets/posts/ASM/post3/register1.jpg)
+![](assets/posts/ASM/registers/register1.jpg)
 
 These registers have more specific uses:
 1. `Primary accumulator - EAX` is mainly used in arithmetic calculations to store the output from an arithmetic operation.
@@ -55,7 +53,7 @@ The pointer registers are 32-bit `EIP`, `ESP`, and `EBP` registers and correspon
 2. `SP` is mainly used to provide the offset value within the program stack. 
 3. `BP` is mainly used to help in referencing the parameter variables passed to a subroutine. 
 
-![](assets/posts/ASM/post3/register2.jpg)
+![](assets/posts/ASM/registers/register2.jpg)
 
 
 #### Index registers
@@ -63,7 +61,7 @@ The 32-bit index registers, `ESI` and `EDI`, and their 16-bit rightmost portions
 1. `SI` is used as as source index for string operations.
 2. `DI` is used as destination index for string operations.
 
-![](assets/posts/ASM/post3/register2.jpg)
+![](assets/posts/ASM/registers/register2.jpg)
 
 
 ### Control registers
