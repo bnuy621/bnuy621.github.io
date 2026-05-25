@@ -127,11 +127,13 @@ syscall
 ```
 At the first breakpoint, `ZF` has been set to `0`. 
 
+![](assets/posts/ASM/conditions/jne_1.png)
 
 
 This triggers the jump to line 16. At the second breakpoint, RIP has the memory address of line 16 due to the previous jump.
 
 
+![](assets/posts/ASM/conditions/jne_2.png)
 
 ## JG/JNLE
 This jump looks for  ZF = `0` and SF=OF. This is usually used to compare if a number is bigger than the other.
@@ -386,7 +388,7 @@ This causes the code to jump to WORKS. At the second breakpoint, RIP contains th
 
 ![](assets/posts/ASM/conditions/jc_2.png)
 
-![](assets/posts/ASM/conditions/jc_3.png)
+
 
 ### JNC
 Jump If No Carry
@@ -468,7 +470,7 @@ At the first breakpoint, OF=1 which causes the code to jump to WORKS.
 At the second breakpoint, RIP contains the memory address of line 15.
 ![](assets/posts/ASM/conditions/jo_2.png)
 
-![](assets/posts/ASM/conditions/jo_3.png)
+
 
 
 ### JNO

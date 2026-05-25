@@ -7,8 +7,6 @@ description: ASM
 toc: true
 ---
 
-## Introduction
-So i decided to try learning 32 bit assembly with this website as a reference <https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm>
 
 ## Sections
 An assembly program has 3 main sections. These 3 sections being the data, bss and text section.

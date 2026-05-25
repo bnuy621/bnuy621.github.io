@@ -81,38 +81,6 @@ abcd_x8 dy "abcdabcdabcdabcdabcdabcdabcdabcd"
 ### DZ 
 Allocates 64 bytes
 
-### Example
-
-This is the code i will be using:
-
-```
-segment .data
-  hello db "hello",0x0 ;allocates 5 bytes
-  abmsg dw "ab",0x0; allocates 2 bytes
-  abcdmsg dd "abcd",0x0 ;allocates 4 bytes
-  abcdefghmsg dq "abcdefgh",0x0; allocates 8 bytes
-  abcdefghijklmsg dt "abcdefghij" ;allocates 10 bytes
-  abcdx4_msg do "abcdabcdabcdabcd" ;allocates 16 bytes
-  abcd_x8 dy "abcdabcdabcdabcdabcdabcdabcdabcd" ;allocates 32 bytes
-section .text
-  global _start
-_start:
-  mov rax,60
-  syscall
-```
-Compile and link it via:
-
-```
-nasm -f elf64 -g -F dwarf -o x64_allocate.o x64_allocate.assembly
-ld -o x64_allocate x64_alloicate.o
-```
-To view the variables and their sizes in gdb, run the following command:
-
-```
-info variables
-```
-
-![](assets/posts/ASM/post7/variables.png)
 
 ## Reserving bytes
 This is usually used for uninitialised variables, such as:
@@ -135,33 +103,6 @@ While for x64:
 1. RESO - reserve 16 bytes
 2. RESY - reserve 32 bytes
 3. RESZ - reserve 64 bytes
-
-### Example
-
-This is the code i will be using:
-
-```
-section .data
-  hello db "hello"
-section .bss
-  hello_msg resb 1
-  ab_msg resw 1
-  abcd_msg resd 1
-  abcdefgh_msg resq 1
-  abcdefghij_msg rest 1
-  abcdx4_msg reso 1
-  abcdx8_msg resy 1
-
-section .text
-  global _start
-_start:
-  mov rax,60
-  syscall
-```
-
-This is the output from `info variables`:
-
-![](assets/posts/ASM/post7/reserved.png)
 
 ## References
 <https://www.tutorialspoint.com/assembly_programming/assembly_variables.htm>

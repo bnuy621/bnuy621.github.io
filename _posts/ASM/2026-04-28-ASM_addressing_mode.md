@@ -7,11 +7,8 @@ description: ASM
 toc: true
 ---
 
-## Introduction
-yes. idk what to put here
 
 ## Addressing modes
-
 In assembly, most operations require operands (values) to be processed. An address provides the location where this value is located. There are many ways of doing so, here are some of them:
 
 1. Register addressing

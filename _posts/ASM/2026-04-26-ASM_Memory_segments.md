@@ -7,33 +7,39 @@ description: ASM
 toc: true
 ---
 
-## Introduction
-<https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm>
-
 ## Segments
-An assembly program can be split into memory segments which consists of the `data` segment where our variables are, the `code` segment
-where our code is stored and the stack where local variables are temporarily stored. 
-
-This means that if i replaced the keyword `section` with `segment` it will still compile. 
-
-This is the contents of the assembly file:
+The syntax 'segments' can be used instead of 'sections' as they both refer to the same thing.
 ```
-segment.bss   ;allocate memory for variables that are yet to be initialised
+segment .bss   ;allocate memory for variables that are yet to be initialised
 
-segment.data  ;define variables and initialise them
+segment .data  ;define variables and initialise them
 
 
-segment.text
+segment .text
   global _start ;this tells the kernel to run from _start
 
 _start:
+mov rax, 60
+syscall
+
 ```
 
-The screenshot below shows that it is still able to compile:
+
+is essentially the same as:
+
+```
+section .bss   ;allocate memory for variables that are yet to be initialised
+
+section .data  ;define variables and initialise them
 
 
-![](assets/posts/ASM/post2/clip.png)
+section .text
+  global _start ;this tells the kernel to run from _start
 
+_start:
+mov rax, 60
+syscall
+```
 
 ## References
 <https://www.tutorialspoint.com/assembly_programming/assembly_memory_segments.htm>
